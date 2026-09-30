@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#102A43" />
+  <meta name="description" content="منصة علوم ثالث متوسط وفق منهج المملكة العربية السعودية — إعداد الأستاذة فاتن أبو سبل." />
+  <title>مختبر العلوم | ثالث متوسط</title>
+  <link rel="icon" href="logo.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <img src="logo.svg" alt="شعار مختبر العلوم" />
+        <div><strong>مختبر العلوم</strong><span>ثالث متوسط</span></div>
+      </div>
+      <button class="close-sidebar" id="closeSidebar" aria-label="إغلاق القائمة">×</button>
+      <nav class="main-nav" aria-label="التنقل الرئيسي">
+        <button class="nav-item active" data-section="home"><span>⌂</span>الرئيسية</button>
+        <button class="nav-item" data-section="units"><span>▦</span>الوحدات والدروس</button>
+        <button class="nav-item" data-section="activities"><span>✦</span>الأنشطة التفاعلية</button>
+        <button class="nav-item" data-section="quiz"><span>✓</span>اختبار قصير</button>
+        <button class="nav-item" data-section="review"><span>↻</span>مراجعة سريعة</button>
+      </nav>
+      <div class="teacher-card">
+        <span class="eyebrow">إعداد</span>
+        <strong>الأستاذة فاتن<br/>أبو سبل</strong>
+        <p>رحلة تعلم ممتعة في عالم العلوم</p>
+      </div>
+      <div class="side-footer">منهج المملكة العربية السعودية<br/><span>إصدار تعليمي تفاعلي</span></div>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <button class="menu-toggle" id="menuToggle" aria-label="فتح القائمة">☰</button>
+        <div class="breadcrumbs"><span>الصف الثالث المتوسط</span><b>/</b><strong id="breadcrumbCurrent">الرئيسية</strong></div>
+        <div class="top-actions"><button class="icon-btn" id="themeToggle" aria-label="تبديل المظهر">☼</button><div class="avatar">ع</div></div>
+      </header>
+
+      <section class="page-section active" id="home">
+        <div class="hero">
+          <div class="hero-copy"><span class="eyebrow light">أهلًا بكِ في رحلتك العلمية</span><h1>اكتشفي، جرّبي،<br/><em>وافهمي العلوم.</em></h1><p>منصة تفاعلية تساعدك على مراجعة مفاهيم علوم ثالث متوسط بطريقة ممتعة ومنظمة.</p><button class="primary-btn" data-go="units">ابدئي التعلم <span>←</span></button></div>
+          <div class="hero-orbit" aria-hidden="true"><div class="orbit orbit-a"></div><div class="orbit orbit-b"></div><div class="atom"><span></span><b>✦</b></div><div class="floating-note note-one">تجربة اليوم<br/><strong>الطاقة</strong></div><div class="floating-note note-two">+ ١٠ نقاط<br/><small>إنجاز جديد!</small></div></div>
+        </div>
+        <div class="section-head"><div><span class="eyebrow">لوحة التعلم</span><h2>ماذا ستتعلمين اليوم؟</h2></div><span class="date-pill">الأربعاء، ٣٠ سبتمبر</span></div>
+        <div class="stats-grid"><div class="stat-card"><span class="stat-icon teal">▦</span><div><strong>٦</strong><span>وحدات دراسية</span></div></div><div class="stat-card"><span class="stat-icon yellow">✓</span><div><strong id="completedCount">٠</strong><span>دروس مكتملة</span></div></div><div class="stat-card"><span class="stat-icon coral">◉</span><div><strong id="pointsCount">٠</strong><span>نقاطك الحالية</span></div></div><div class="stat-card progress-card"><div class="progress-ring"><span id="progressPercent">٠٪</span></div><div><strong>استمري!</strong><span>تقدمك الكلي</span></div></div></div>
+        <div class="home-grid"><div class="panel daily-panel"><div class="panel-title"><div><span class="eyebrow">مختبر اليوم</span><h3>لماذا تطفو بعض الأجسام؟</h3></div><span class="tiny-tag">نشاط قصير</span></div><p>اختبري فهمك لمفهوم الكثافة من خلال سؤال سريع، ثم قارني إجابتك بالتفسير العلمي.</p><button class="outline-btn" data-go="activities">ابدئي النشاط <span>←</span></button></div><div class="panel continue-panel"><div class="panel-title"><div><span class="eyebrow">واصلي من حيث توقفتِ</span><h3>الوحدة الأولى: طبيعة العلم</h3></div><span class="lesson-number">٠١</span></div><div class="lesson-progress"><div><span>مقدمة إلى العلم</span><b>٢٥٪</b></div><div class="bar"><i style="width:25%"></i></div></div><button class="text-btn" data-go="units">متابعة الدرس <span>←</span></button></div></div>
+      </section>
+
+      <section class="page-section" id="units"><div class="section-head"><div><span class="eyebrow">المحتوى الدراسي</span><h2>الوحدات والدروس</h2></div><div class="filter-pills"><button class="filter active">الكل</button><button class="filter">المفضلة</button></div></div><p class="section-intro">اختاري وحدة للبدء. يمكنكِ العودة إلى أي درس في أي وقت.</p><div class="units-grid" id="unitsGrid"></div></section>
+
+      <section class="page-section" id="activities"><div class="section-head"><div><span class="eyebrow">تعلّم بالتجربة</span><h2>الأنشطة التفاعلية</h2></div></div><div class="activity-layout"><div class="activity-main panel"><div class="activity-visual"><div class="beaker"><div class="liquid"></div><span>H₂O</span></div><div class="bubble b1"></div><div class="bubble b2"></div><div class="activity-label">نشاط ٠١</div></div><div class="activity-content"><span class="eyebrow">توقّعي النتيجة</span><h3>أي جسم سيطفو؟</h3><p>لديكِ جسمان بالحجم نفسه: كرة من الخشب وأخرى من الحديد. ماذا تتوقعين؟</p><div class="choice-row"><button class="choice" data-correct="true">كرة الخشب</button><button class="choice" data-correct="false">كرة الحديد</button></div><div class="feedback" id="activityFeedback"></div></div></div><div class="activity-side panel"><span class="eyebrow">مؤقت التركيز</span><div class="timer" id="timer">05:00</div><p>خذي خمس دقائق لمراجعة مفهوم واحد بهدوء.</p><button class="primary-btn full" id="timerBtn">ابدئي المؤقت</button><button class="reset-btn" id="timerReset">إعادة ضبط</button></div></div></section>
+
+      <section class="page-section" id="quiz"><div class="quiz-wrap"><div class="quiz-top"><div><span class="eyebrow">تحققي من فهمك</span><h2>اختبار قصير</h2></div><span class="quiz-counter" id="quizCounter">السؤال ١ من ٥</span></div><div class="quiz-progress"><i id="quizProgress"></i></div><div class="quiz-card" id="quizCard"></div></div></section>
+
+      <section class="page-section" id="review"><div class="section-head"><div><span class="eyebrow">قبل الاختبار</span><h2>مراجعة سريعة</h2></div></div><div class="flashcard-wrap"><div class="flashcard" id="flashcard"><div class="flash-front"><span class="card-label">مفهوم علمي</span><h3 id="flashQuestion">ما المقصود بالكثافة؟</h3><p>اضغطي على البطاقة لرؤية الإجابة</p><span class="flip-hint">↻</span></div><div class="flash-back"><span class="card-label">الإجابة</span><p id="flashAnswer">الكثافة هي كتلة المادة لكل وحدة حجم منها.</p><span class="flip-hint">اضغطي للعودة</span></div></div><div class="flash-controls"><button class="outline-btn" id="prevCard">السابق</button><span id="flashCount">١ / ٤</span><button class="primary-btn" id="nextCard">التالي</button></div></div></section>
+      <footer>© ٢٠٢٦ مختبر العلوم <span>•</span> إعداد الأستاذة فاتن أبو سبل</footer>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
